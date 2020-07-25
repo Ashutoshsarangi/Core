@@ -48,3 +48,62 @@
 .variation6:hover{
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.variation7{
+  padding: 15px 30px;
+  border: 1px solid #123456;
+  background: #6bf354;
+  font-size: 16px;
+  color: white;
+  transition-duration: 0.4s;
+  float: left;
+
+}
+
+.variation7:hover{
+  background: #123456;
+}
+
+.variation8{
+  display: block;
+  border: 1px solid black;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px;
+  background: #2f4be6;
+  transition-duration: 0.4s;
+}
+
+.variation8:hover{
+  background: transparent;
+  color:black;
+}
+
+.clear{
+  clear:both;
+}
+.imgContainer{
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  position: relative;
+}
+.img{
+  width: 100%;
+}
+.variation9{
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+  cursor: pointer;
+  background: radial-gradient(black, transparent);
+  transition-duration: 0.4s;
+}
+.variation9:hover{
+  background: white;
+  color:black;
+}
