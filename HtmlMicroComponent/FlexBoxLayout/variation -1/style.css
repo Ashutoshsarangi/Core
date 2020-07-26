@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+}
+.parent-flex{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.child-flex{
+  display: flex;
+  flex-wrap:wrap;
+  border:1px solid black;
+}
+.headerFlex{
+  display: flex;
+  height:150px;
+  border:1px solid;
+  justify-content: start;
+  align-items: center;
+}
+.navBar{
+  border: 2px solid Green;
+  height:100px;
+  flex-grow:1;
+}
+.mainContent{
+  border:2px solid red;
+  flex-grow:3;
+}
+.footer{
+  border:1px solid black;
+  height:50px;
+  display: flex;
+  justify-content:center;
+}
