@@ -1,0 +1,103 @@
+body{
+  margin:20px;
+  padding:10px;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+.variation1{
+  padding: 10px 5px;
+  border-bottom: 1px solid #123456;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.variation1:last-child{
+  border:none;
+}
+.variation1:hover{
+  background: #b1c3d6;
+}
+
+.ulVariation2{
+  border: 1px solid;
+  margin: 0px;
+  padding: 0px;
+}
+.variation2{
+  padding: 10px;
+  border: 1px solid;
+  transition-duration: 0.4s;
+}
+.variation2:hover{
+  background:#becddd;
+}
+
+.variation3Card{
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid;
+  box-shadow: 0 12px 19px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.ulVariation3{
+  padding: 0px;
+  margin:0px;
+  text-align: center;
+}
+.variation3{
+  padding: 10px;
+  border-bottom: 1px solid #123456;
+  position: relative;
+  /* transition-duration: 0.4s; */
+}
+.variation3:last-child{
+  border:none;
+}
+
+.crossIcon{
+  position: absolute;
+  right: 0px;
+  top: 0;
+  transition-duration: 0.4s;
+  padding: 10px;
+}
+.crossIcon:hover{
+  background: #bdc0c4;
+}
+.listFlex{
+  display: flex;
+  border-bottom: 1px solid #ccd7e3;
+  padding: 10px 20px;
+}
+.listFlex:last-child{
+  border:none;
+}
+.imgFormator{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  flex-grow: 0.3;
+}
+.ulVariation4{
+  margin:0px;
+  padding: 0px;
+}
+.iconVariation4{
+  flex-grow:0;
+  padding: 17px;
+  cursor: pointer;
+  transition-duration:0.4s;
+}
+.iconVariation4:hover{
+  background:#a3a9af;
+}
+.mainContent{
+  flex-grow:8;
+  display:flex;
+  flex-direction:column;
+  padding: 4px 20px;
+}
+.variation4Card{
+  width:100%;
+  box-shadow:0 12px 19px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
