@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tab Component</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+
+<body>
+  <P>Variation 1 Tab</P>
+  <div class="tab">
+    <button id="btnLondon" class="tabLink btnActive" onclick="activeTav('btnLondon','London')">London</button>
+    <button id="btnParis" class="tabLink" onclick="activeTav('btnParis','Paris')">Paris</button>
+    <button id="btnTokyo" class="tabLink" onclick="activeTav('btnTokyo','Tokyo')">Tokyo</button>
+  </div>
+  <div id="London" class="tabcontent active">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    <i class="fa fa-times icon" onclick="closeTab('London')" aria-hidden="true"></i>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <script>
+    function activeTav(btnId, tabId) {
+      let tabContent = document.getElementsByClassName("tabcontent");
+      let tabLink = document.getElementsByClassName("tabLink")
+      for (let item of tabContent) {
+        item.classList.remove('active');
+      }
+      for (let item of tabLink) {
+        item.classList.remove('btnActive');
+      }
+      document.getElementById(tabId).classList.add('active');
+      document.getElementById(btnId).classList.add('btnActive')
+    }
+    function closeTab(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+  </script>
+</body>
+
+</html>

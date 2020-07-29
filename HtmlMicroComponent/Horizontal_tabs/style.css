@@ -1,0 +1,46 @@
+button{
+  border: none;
+  padding: 12px 17px;
+  outline: none;
+  font-size: 16px;
+  float: left;
+  cursor:pointer;
+  transition-duration: 0.4s;
+}
+.tab{
+  border: 1px solid #e9d9d9;
+  overflow: hidden;
+  background: #efefef;
+}
+ button:hover{
+   background: #b4c5e9; 
+ }
+ .btnActive{
+   background: #14dd61
+ }
+ .tabcontent{
+  border: 1px solid #e9d9d9;
+  padding: 10px 18px;
+  display: none;
+  position:relative;
+ }
+ h3{
+   font-size: 27px;
+ }
+ p{
+   font-size: 18px;
+ }
+ .active{
+   display: block;
+ }
+ .icon{
+  padding: 5px 8px;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+ }
+ .icon:hover{
+   background:#c0daf3;
+ }
