@@ -1,0 +1,43 @@
+.container{
+  display: block;
+  padding: 10px;
+  padding-left: 35px;
+  font-size: 21px;
+  user-select: none;
+  position: relative;
+  cursor:pointer;
+}
+.customRadio{
+  transition-duration: 0.4s;
+  border: 1px solid;
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  top: 11px;
+  border-radius: 50%;
+  background: #eee;
+}
+input{
+  width: 0;
+}
+.container:hover  .customRadio{
+  background:#6faeec;
+}
+input[type=radio]:checked ~ .customRadio{
+  background: #167ce2;
+}
+input[type=radio]:checked ~ .customRadio:after{
+  display:block;
+}
+.customRadio:after{
+  content: "";
+  display:none;
+  position: absolute;
+  left: 5px;
+  border: 3px solid white;
+  padding: 2px;
+  top: 5px;
+  border-radius: 50%;
+  background: white;
+
+}
