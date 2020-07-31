@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Select Box</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+</head>
+
+<body>
+  <div class="select" onclick="manageBox()">
+    <span id="select">Select One</span>
+    <i class="fa fa-arrow-down icon" aria-hidden="true"></i>
+  </div>
+  <ul onclick="selectOne(event)" id="box">
+    <li id="1" data-val="Ashu">A</li>
+    <li id="2" data-val="Basu">B</li>
+    <li id="3" data-val="Dhasu">C</li>
+    <li id="4" data-val="Nasu">D</li>
+    <li id="5" data-val="Tasu">E</li>
+  </ul>
+  <script>
+    let flag = false;
+    function selectOne(e) {
+      document.getElementById("select").textContent = e.target.innerHTML;
+      // document.getElementById("box").style.display = "none";
+      // flag = true;
+      manageBox();
+    }
+    function manageBox() {
+      flag = !flag;
+      if (flag) {
+        document.getElementById("box").style.display = "block";
+      } else {
+        document.getElementById("box").style.display = "none";
+      }
+    }
+    function closeSelect() {
+      flag = false;
+      document.getElementById("box").style.display = "none";
+    }
+    // document.addEventListener("click", closeSelect);
+  </script>
+</body>
+
+</html>

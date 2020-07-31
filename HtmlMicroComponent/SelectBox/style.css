@@ -1,0 +1,31 @@
+.select{
+  border: 1px solid;
+  padding: 10px 15px;
+  font-size: 19px;
+  cursor:pointer;
+  position: relative;
+}
+ul li{
+  padding: 7px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+ul :last-child{
+  border:none;
+}
+ul{
+  list-style: none;
+  border: 1px solid;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+  box-shadow: 0 12px 19px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0, 0.19);
+}
+li:hover{
+  background:#a0bfdf;
+}
+.icon{
+  position: absolute;
+  right: 10px;
+}
