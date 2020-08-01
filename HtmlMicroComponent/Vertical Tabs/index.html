@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vertical Tab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="tabContainer">
+    <ul class="tab" onclick="openTab(event)">
+      <li id="A" data-id="1" class="list active">A</li>
+      <li id="B" data-id="2" class="list">B</li>
+      <li id="C" data-id="3" class="list">C</li>
+      <li id="D" data-id="4" class="list">D</li>
+    </ul>
+    <div class="content">
+      <div id="1" class="element">Container A
+        <p>
+          hjasdjhasd sdhkasdkaskd askhdkjashdkjahsdkjhaskdhkas dasd kasdkjahsk
+        </p>
+        <p>
+          hjasdjhasd sdhkasdkaskd askhdkjashdkjahsdkjhaskdhkas dasd kasdkjahsk
+        </p>
+        <p>
+          hjasdjhasd sdhkasdkaskd askhdkjashdkjahsdkjhaskdhkas dasd kasdkjahsk
+        </p>
+        <p>
+          hjasdjhasd sdhkasdkaskd askhdkjashdkjahsdkjhaskdhkas dasd kasdkjahsk
+        </p>
+        <p>
+          hjasdjhasd sdhkasdkaskd askhdkjashdkjahsdkjhaskdhkas dasd kasdkjahsk
+        </p>
+      </div>
+      <div id="2" class="element">Container B</div>
+      <div id="3" class="element">Container C</div>
+      <div id="4" class="element">Container D</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      let t = document.getElementsByClassName("list active");
+      document.getElementById(t[0].dataset.id).style.display = "Block";
+
+    })()
+    function openTab(e) {
+      console.log(e.target.id);
+      let targetElement = document.getElementsByClassName("element");
+      for (let i = 0; i < targetElement.length; i++) {
+        targetElement[i].style.display = "none";
+      }
+      let listElement = document.getElementsByClassName("list");
+      for (let item of listElement) {
+        item.classList.remove("active");
+      }
+
+      document.getElementById(e.target.dataset.id).style.display = "block";
+      document.getElementById(e.target.id).classList.add("active");
+    }
+
+  </script>
+</body>
+
+</html>
