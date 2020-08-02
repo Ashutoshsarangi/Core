@@ -1,0 +1,12 @@
+body{
+  margin:10px auto;
+  padding: 10px;
+}
+h1{
+  text-align: center;
+}
+img{
+  display: block;
+  max-width: 450px;
+  min-height: 300px;
+}
