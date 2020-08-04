@@ -1,0 +1,43 @@
+.container{
+  position: relative;
+  display: block;
+  user-select: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 40px;
+}
+.checkmark{
+  border: 1px solid;
+  background: #eee;
+  transition-duration: 0.4s;position: absolute;
+  left: 0;
+  padding: 10px;
+}
+input[type=checkbox]{
+  height:0;
+  width:0;
+  cursor:pointer;
+}
+.container:hover  .checkmark{
+  background:#5ba4ec;
+}
+
+input[type=checkbox]:checked ~ .checkmark{
+  background: #0f78e2;
+}
+input[type=checkbox]:checked ~ .checkmark:after{
+  display: block;
+}
+.checkmark:after{
+  border: 1px solid white;
+  position: absolute;
+  left: 5px;
+  display: none;
+  top: 0px;
+  content: "";
+  padding: 6px 3px;
+  border-width: 0px 3px 3px 0px;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
