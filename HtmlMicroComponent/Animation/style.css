@@ -1,0 +1,20 @@
+.loader{
+  width:25px;
+  height: 25px;
+  border:1px;
+  background: red;
+  position: relative;
+  animation-name:loaderAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite
+}
+
+
+
+@keyframes loaderAnimation{
+  0% {background:red; top:0;left:0}
+  25% {background:yellow; top:0;left:50px}
+  50% {background:green;top:50px;left:50px}
+  75% {background:green;top:50px;left:0}
+  100% {background:red;top:0;left:0}
+}
