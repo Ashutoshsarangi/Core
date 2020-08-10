@@ -15,10 +15,10 @@
     <h1>Number guessing game</h1>
     <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if
       your guess was too high or too low.</p>
-    <form id="myForm">
-      <label for="guessNumber">Enter a guess:</label>
-      <input type="text" id="guessNumber" placeholder="Please Enter a Number" />
-    </form>
+    <!-- <form id="myForm"> -->
+    <label for="guessNumber">Enter a guess:</label>
+    <input type="text" id="guessNumber" placeholder="Please Enter a Number" />
+    <!-- </form> -->
     <p id="numList"><span>Numbers You Typed</span> </p>
     <button onclick="submitGuess()">
       Submit Guess
@@ -29,33 +29,35 @@
   </div>
   <script>
     let randomNumber = Math.round(Math.random() * 100);
-    let formObj = document.getElementById("myForm");
+    // let formObj = document.getElementById("myForm");
     let n = 5;
     let count = 0;
     let submitGuess = () => {
       console.log(randomNumber);
       if (count < n) {
         count += 1;
-        let num = formObj.elements.guessNumber.value;
-        formObj.elements.guessNumber.value = '';
+        let Obj = document.getElementById("guessNumber");
+        console.log(document.getElementById("guessNumber").value());
+        Obj.value = '';
         appendNumber(num);
-        if (num > randomNumber) {
-          document.getElementById("message").textContent = "Number is too large";
-        }
-        else if (num < randomNumber) {
-          document.getElementById("message").textContent = "Number is too Small";
-        }
-        else {
-          document.getElementById("finalMessage").textContent = "Congratulation you Own the game";
-          document.getElementById("finalMessage").style.background = "green";
-          setTimeout(() => {
-            newGame();
-          }, 1000);
-        }
-      } else {
-        document.getElementById("finalMessage").textContent = "You Loose the game";
-        document.getElementById("finalMessage").style.background = "red";
-        newGame();
+        //   if (num > randomNumber) {
+        //     document.getElementById("message").textContent = "Number is too large";
+        //   }
+        //   else if (num < randomNumber) {
+        //     document.getElementById("message").textContent = "Number is too Small";
+        //   }
+        //   else {
+        //     document.getElementById("finalMessage").textContent = "Congratulation you Own the game";
+        //     document.getElementById("finalMessage").style.background = "green";
+        //     // setTimeout(() => {
+        //     //   newGame();
+        //     // }, 1000);
+        //   }
+        // } else {
+        //   document.getElementById("finalMessage").textContent = "You Loose the game";
+        //   document.getElementById("finalMessage").style.background = "red";
+        //   // newGame();
+        // }
       }
     }
 
