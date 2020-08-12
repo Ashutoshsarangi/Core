@@ -1,0 +1,89 @@
+body{
+  background: #54d453;
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  /* background: #8bef56; */
+}
+.logo{
+  width:50px;
+  position: absolute;
+  right: 0;
+}
+.head{
+  text-align: center;
+  position: relative;
+  padding: 20px 10px;
+}
+.head .title{
+  font-size:36px;
+  display: inline;
+}
+nav ul li{
+  display: inline;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+
+}
+hr{
+  border: 5px solid#87919b;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: #41e928;
+  padding: 10px 20px;
+}
+nav{
+  padding: 10px 20px;
+}
+main{
+  background: #8bef56;
+  display: flex;
+  justify-content: space-between;
+  min-height: 350px;
+}
+article{
+  width: 70%;
+  text-align: center;
+  border: 5px solid #54d453;
+}
+article p{
+  padding: 10px;
+  line-height: 1.5;
+}
+aside{
+  border: 5px solid #54d453;
+  text-align: center;
+  width: 30%;
+}
+footer{
+}
+.favList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+.favList img{
+  width: 117px;
+}
+.cardTitle{
+  font-size: 35px;
+}
+footer{
+  padding:10px;
+}
+h1, h2, h3{
+  font-family: 'Cinzel Decorative', cursive;
+  color: #2a2a2a;
+}
+p, input, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+
