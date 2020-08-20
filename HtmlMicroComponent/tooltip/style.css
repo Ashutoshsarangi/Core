@@ -1,0 +1,30 @@
+.toolTipText{
+  padding: 5px;
+  background: black;
+  color: white;
+  border-radius: 10%;
+  visibility: hidden;
+  position: absolute;
+  top: -31px;
+  left: 0;
+  
+}
+.toolTip{
+  cursor:pointer;
+}
+.toolTip:hover + .toolTipText{
+ visibility:visible
+}
+div{
+  position: relative;
+}
+
+.toolTipText:after{
+  content: " ";
+  border: 1px solid;
+  border-width: 5px;
+  position: absolute;
+  left: 42%;
+  bottom: -10px;
+  border-color: black transparent transparent;
+}

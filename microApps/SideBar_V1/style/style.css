@@ -1,0 +1,57 @@
+body{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+.header{
+  position:relative;
+  display:flex;
+  background:#4195ea;
+}
+.center{
+font-size:2.5em;
+user-select:none;
+color:white;
+flex: 9;
+text-align: center;
+}
+.menuIcon{
+  position:absolute;
+  right:0;
+  top:5px;
+  font-size:2em;
+  flex:1;
+  cursor:pointer;
+  color:white;
+}
+nav ul{
+  margin: 0px;
+  list-style: none;
+  padding :0;
+  background: #4195ea;
+  display: none;
+  transition-duration: 0.4s;
+  /* animation-name: slider; */
+  /* animation-duration: 4s; */
+  /* transition-property: all; */
+  animation-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+}
+nav ul li{
+padding:10px 20px;
+cursor:pointer;
+color:white;
+text-align:center;
+user-select:none;
+}
+nav ul li:hover{
+  background:#123456;
+}
+@keyframes slider{
+  0% {
+    top: 0;
+  }
+  100% {
+    bottom:300px;
+  }
+}

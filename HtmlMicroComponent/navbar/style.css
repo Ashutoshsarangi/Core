@@ -1,0 +1,90 @@
+.variation1Nav{
+  border: 1px solid;
+  padding: 10px 15px;
+  position: relative;
+  background: #063e77;
+  color: white;
+  font-size: 19px;
+  padding-left: 0;
+}
+.variation1List{
+  /* border: 1px solid; */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.variation1List:last-child{
+  position: absolute;
+  right:8px;
+  top:0px;
+}
+.variation1List:hover{
+  background:#010e1b;
+}
+.active{
+  background: rgb(14 125 236) !important;
+  color:white;
+  
+}
+.variation2Nav{
+  border: 1px solid;
+  padding: 10px;
+  position: relative;
+  background: #eee9f38f;
+  padding-left: 0;
+  font-size:19px;
+
+}
+.variation2List{
+  padding: 10px;
+  cursor: pointer;
+  transition-duration:0.4s;
+}
+.variation2List:hover{
+  background: #a7a9ac;
+}
+.search{
+  padding: 8px;
+  position: absolute;
+  right: 18%;
+  top: 1.5px;
+  padding-left: 25px;
+  font-size: 16px;
+}
+.variation2List:last-child{
+  position: absolute;
+  right: 8px;
+  top:0;
+}
+.icon{
+  position: absolute;
+  right: 44%;
+  background: #f6f3f8;
+  padding: 6px 2px;
+  top: 6px;
+}
+.variation3nav{
+  
+}
+.variation3List{
+  display: block;
+  border: 1px solid black;
+  padding: 10px 15px;
+  max-width: 300px;
+  cursor:pointer;
+  border-bottom: 0;
+  background:#e9eaeb;
+  transition-duration: 0.4s;
+  font-size: 18px;
+}
+.variation3List:hover{
+  background:#b1b3b4;
+  color: white
+}
+.variation3List:last-child{
+  border-bottom:1px solid black;
+}
+.activevariation3{
+  background:#07ba1f !important;
+  color:white;
+}

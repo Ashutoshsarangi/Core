@@ -1,0 +1,26 @@
+ul{
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  box-shadow:0 12px 19px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0,0,0,0.19)
+}
+li{
+  padding: 10px 15px;
+  border-bottom: 1px solid black;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+li:hover{
+  background: #e2e5e7;
+}
+span{
+  position: absolute;
+  right: 9px;
+  font-size: 25px;
+  border: 1px solid;
+  padding: 0px 8px;
+  border-radius: 50%;
+  top: 5px;
+  background: #ecf0f4;
+  cursor: pointer;
+}

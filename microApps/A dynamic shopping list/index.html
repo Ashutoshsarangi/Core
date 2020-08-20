@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Auther" content="Ashutosh Sarangi">
+  <meta name="Description" content="This is An Dynamic List Item Adding Page">
+  <meta name="viewport" content="width=device-width, initial-step=1.0">
+  <title>Dynamic List Items</title>
+  <link rel="shortcut icon" href="../../plugins/logo-icohotlist.png">
+</head>
+
+<body>
+  <h1>My Shopping List</h1>
+  <div>
+    <label>Enter A New Item</label>
+    <input type="text" id="itemName" placeholder="Enter New List Item">
+    <button onclick="addItem()">Add Item</button>
+  </div>
+  <ul id="listContainer" onclick="handleDeleteItem(event)" style="display: none">
+  </ul>
+  <script src="./src/main.js"></script>
+</body>
+
+</html>

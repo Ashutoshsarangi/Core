@@ -1,0 +1,20 @@
+
+input[type=text]{
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  padding-left: 31px;
+}
+span{
+  position: absolute;
+  top: 0;
+  padding: 11px 10px;
+  background: transparent;
+  font-size: 20px;
+  color: #d0d6dc;
+}
+div{
+  position:relative;
+  width: 100%;
+    max-width: 500px;
+}

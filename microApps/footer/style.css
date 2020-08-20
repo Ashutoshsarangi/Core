@@ -1,0 +1,26 @@
+footer{
+  display: flex;
+  border:1px solid;
+}
+
+.variation2 div{
+  padding: 10px;
+  color: white;  
+}
+.variation2{
+  display: flex;
+  border:1px solid;
+  padding: 50px;
+  background: #123456;
+  justify-content:space-around
+}
+
+.variation2 div p{
+  padding: 0px;
+  margin: 5px 0px;
+}
+.partition{
+  border: 1px solid;
+  color: white;
+  opacity: 0.2;
+}

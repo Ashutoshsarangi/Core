@@ -1,0 +1,38 @@
+*{
+  font-size:16px;
+}
+body{
+ margin:0;
+ border:0;
+ box-sizing: border-box;
+}
+
+@media only screen and (max-width: 620px){
+ *{
+   font-size:21px;
+ }
+
+}
+@media only screen and (min-width: 621px){
+  .menubar{
+    display: none;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    border:1px solid;
+  }
+  header div{
+    padding: 10px;
+  }
+  nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li{
+    padding: 10px 20px;
+    margin: 0px 15px;
+  }
+}

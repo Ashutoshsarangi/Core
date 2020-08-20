@@ -1,0 +1,18 @@
+
+td, th{
+  padding: 10px 20px;
+  border-bottom:1px solid;
+  border-right:1px solid;
+}
+tr:last-child td{
+  border-bottom:0px solid;
+}
+th:last-child,td:last-child{
+  border-right:0px solid;
+}
+table{
+  border:1px solid;
+  border-spacing: 0;
+}
+
+

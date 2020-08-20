@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nav Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+</head>
+
+<body>
+  <p>Variation 1</p>
+  <nav class="variation1Nav" onclick="navigate(event)">
+    <a id="1" class="variation1List">Home</a>
+    <a id="2" class="variation1List">News</a>
+    <a id="3" class="variation1List">Contact</a>
+    <a id="4" class="variation1List">About</a>
+  </nav>
+
+  <p>Variation 2</p>
+  <nav class="variation2Nav" onclick="navigate(event)">
+    <a id="v2-1" class="variation2List">Home</a>
+    <a id="v2-2" class="variation2List">News</a>
+    <a id="v2-3" class="variation2List">Contact</a>
+    <input type="text" class="search" placeholder="Search String" />
+    <i class="fa fa-search icon" aria-hidden="true"></i>
+    <a id="v2-4" class="variation2List">About</a>
+  </nav>
+  <p>
+    Variation 3
+  </p>
+  <nav class="variation3Nav">
+    <a class="variation3List activevariation3">Home</a>
+    <a class="variation3List">News</a>
+    <a class="variation3List">Contact</a>
+    <a class="variation3List">About</a>
+  </nav>
+  <script>
+    let navigate = (e) => {
+      applyCss(e);
+    }
+    let applyCss = (e) => {
+      for (let item of document.getElementsByClassName("variation1List")) {
+        item.classList.remove('active');
+      }
+      for (let item of document.getElementsByClassName("variation2List")) {
+        item.classList.remove('active');
+      }
+      document.getElementById(e.target.id).classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
