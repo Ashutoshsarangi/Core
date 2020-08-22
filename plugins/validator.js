@@ -6,3 +6,6 @@ let numberValidator = (num) => {
   });
   return true;
 }
+let test = () => {
+  console.log('Executed');
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Auther" content="Ashutosh Sarangi">
+  <meta name="Description" content="This Is A Responsive Form Component">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Form Component
+  </title>
+  <link rel="shortcut icon" href="../../plugins/logo-icohotlist.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+
+<body>
+  <h1>Register</h1>
+  <div class="container">
+    <!-- 
+      There Should be proper Structure
+      1. The Submit Button should be out of form Controller 
+      2. Inside form there Should be form Controller which is only for Forms
+      3. Which should have the Only Form Elements
+      4. Margin top and Bottom Should be there
+     -->
+    <form>
+      <div>
+        <label class="inputFieldLabel" for="userFirstName">Enter First Name</label>
+        <input class="inputField errorBorder" data-bind="name" onblur="formValidator(event)" type="text" id="userFirstName" placeholder="Enter First Name"
+        />
+        <i class="fa fa-exclamation errorIcon" aria-hidden="true"></i>
+        <span id="firstNameError" class="errorMessage">Error Message</span>
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="userLastName">Enter Last Name: </label>
+        <input class="inputField successBorder" type="text" id="userLastName" placeholder="Enter Last Name" />
+        <i class="fa fa-check successIcon active" aria-hidden="true"></i>
+        <span id="firstNameError" class="errorMessage">Error Message</span>
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="userEmail">Enter Email</label>
+        <input class="inputField" type="text" id="userEmail" placeholder="Enter User Email" />
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="userDOB">Enter DOB</label>
+        <input class="inputField" type="text" id="userDOB" placeholder="Enter DOB" />
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="userPassword">Enter Password</label>
+        <input class="inputField" type="text" id="userPassword" placeholder="Enter Password" />
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="userConfPassword">Enter Confirm Password</label>
+        <input class="inputField" type="text" id="userConfPassword" placeholder="Enter Confirm Password" />
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="male">Gender</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="chicken">Food List</label>
+        <input type="checkbox" name="food" id="chicken" />
+        <label for="chicken">Chicken</label>
+        <input type="checkbox" name="food" id="fish" />
+        <label for="fish">Fish</label>
+        <input type="checkbox" name="food" id="egg" />
+        <label for="egg"> Egg</label>
+        <input type="checkbox" name="food" id="mutton" />
+        <label for="mutton">Mutton</label>
+      </div>
+      <div>
+        <label class="inputFieldLabel" id="fileUpload">File Upload</label>
+        <input type="file" id="fileUpload" name="upload" />
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="comment">Add Comment</label>
+        <textarea class="inputField" id="comment" placeholder="Enter A Proper Comment"></textarea>
+      </div>
+      <div>
+        <label class="inputFieldLabel" for="city">City:-</label>
+        <select class="inputField" id="city" style="width:91%">
+          <option value="NA">Select an Option</option>
+          <option value="berhampur">Berhampur</option>
+          <option value="thane">Thane</option>
+          <option value="pune">Pune</option>
+        </select>
+      </div>
+      <div></div>
+      <div class="button">
+        <button class="">Submit</button>
+      </div>
+    </form>
+  </div>
+  <script src="./src/main.js"></script>
+  <script src="../../plugins/validator.js"></script>
+</body>
+
+</html>

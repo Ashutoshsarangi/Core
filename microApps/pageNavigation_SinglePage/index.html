@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Ashutosh Sarangi">
+  <meta name="Description" content="This is For Page Navigation">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page Navigation</title>
+  <link rel="shortcut icon" href="../../plugins/logo-icohotlist.png">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <ul onclick="handleNavigation(event)">
+    <li data-bind="home">Home</li>
+    <li data-bind="news">News</li>
+    <li data-bind="contact">Contact</li>
+    <li data-bind="about">About</li>
+  </ul>
+  <div class="container">
+    <iframe id="home" src="src/components/home/index.html" class="section active"> </iframe>
+    <iframe id="news" src="src/components/news/index.html" class="section"> </iframe>
+    <iframe id="contact" src="src/components/contact/index.html" class="section"> </iframe>
+    <iframe id="about" src="src/components/about/index.html" class="section"> </iframe>
+  </div>
+  <script src="./src/service/main.js"></script>
+</body>
+
+</html>

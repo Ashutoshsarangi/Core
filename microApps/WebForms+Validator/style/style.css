@@ -43,6 +43,7 @@ button:hover{
 form div{
   width:50%;
   margin: 10px 0px;
+  position: relative;
 }
 .inputField{
   padding: 10px 20px;
@@ -59,6 +60,43 @@ body{
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+}
+.errorIcon{
+  /* fa-exclamation */
+  position: absolute;
+  right: 5%;
+  top: 38%;
+  border: 1px solid;
+  padding: 1px 7px;
+  border-radius: 53%;
+  color: white;
+  background: red;
+  visibility:hidden;
+}
+.errorBorder{
+  border:2px solid red;
+}
+.errorMessage{
+  color:red;
+  visibility: hidden;
+}
+.successIcon{
+  /* fa-check */
+  position: absolute;
+  right: 5%;
+  top: 38%;
+  border: 1px solid;
+  padding: 1px 1px;
+  border-radius: 53%;
+  color: white;
+  background: green;
+  visibility:hidden;
+}
+.active{
+  visibility: visible
+}
+.successBorder{
+  border:2px solid green;
 }
 @media only screen and (max-width:720px){
 *{

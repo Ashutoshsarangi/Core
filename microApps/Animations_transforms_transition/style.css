@@ -1,0 +1,43 @@
+.animation1Container{
+  border: 1px solid;
+  width: 150px;
+  height: 80%;
+  position: relative;
+  animation-duration: 4s;
+}
+.openSlider{
+  animation-name: slideOpen;
+}
+
+@keyframes slideOpen{
+  0% {left:-200px;}
+  100% {left:0px;}
+  /* 0% {left:52px} */
+}
+
+/* .closeSlider{
+  animation-name: slideOpen;
+}
+@keyframes slideClose{
+  0% {left:50px;}
+  100% {left:-200px;}
+  /* 0% {left:52px} */
+/* }  */
+
+.carousel{
+  max-width:300px;
+}
+.carousel img{
+  animation-duration: 4s;
+  width:100%;
+}
+.addcarousel{
+  animation-name: carousel;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes carousel{
+0% { opacity: 0;}
+33% {opacity: 0.3}
+66% {opacity: 0.8}
+100% {opacity:1}  
+}
