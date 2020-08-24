@@ -26,24 +26,31 @@
     <form>
       <div>
         <label class="inputFieldLabel" for="userFirstName">Enter First Name</label>
-        <input class="inputField errorBorder" data-bind="name" onblur="formValidator(event)" type="text" id="userFirstName" placeholder="Enter First Name"
-        />
-        <i class="fa fa-exclamation errorIcon" aria-hidden="true"></i>
-        <span id="firstNameError" class="errorMessage">Error Message</span>
+        <input class="inputField" data-bind="name" data-IconId="firstNameIcon" data-errorId="firstNameError" onblur="formValidator(event)"
+          type="text" id="userFirstName" placeholder="Enter First Name" />
+        <i class="fa" id="firstNameIcon" aria-hidden="true"></i>
+        <span id="firstNameError"> </span>
       </div>
       <div>
         <label class="inputFieldLabel" for="userLastName">Enter Last Name: </label>
-        <input class="inputField successBorder" type="text" id="userLastName" placeholder="Enter Last Name" />
-        <i class="fa fa-check successIcon active" aria-hidden="true"></i>
-        <span id="firstNameError" class="errorMessage">Error Message</span>
+        <input class="inputField" type="text" data-bind="name" data-IconId="lastNameIcon" data-errorId="lastNameError" id="userLastName"
+          onblur="formValidator(event)" placeholder="Enter Last Name" />
+        <i class="fa" id="lastNameIcon" aria-hidden="true"></i>
+        <span id="lastNameError"> </span>
       </div>
       <div>
         <label class="inputFieldLabel" for="userEmail">Enter Email</label>
-        <input class="inputField" type="text" id="userEmail" placeholder="Enter User Email" />
+        <input class="inputField" type="text" id="userEmail" data-bind="email" data-IconId="emailIcon" data-errorId="emailError"
+          onblur="formValidator(event)" placeholder="Enter User Email" />
+        <i class="fa" id="emailIcon" aria-hidden="true"></i>
+        <span id="emailError"> </span>
       </div>
       <div>
         <label class="inputFieldLabel" for="userDOB">Enter DOB</label>
-        <input class="inputField" type="text" id="userDOB" placeholder="Enter DOB" />
+        <input class="inputField" type="date" min="1994-01-01" id="userDOB" data-bind="date" data-IconId="DOBIcon" data-errorId="DOBError"
+          onchange="formValidator(event)" placeholder="Enter DOB" />
+        <i class="fa" id="DOBIcon" aria-hidden="true"></i>
+        <span id="DOBError"> </span>
       </div>
       <div>
         <label class="inputFieldLabel" for="userPassword">Enter Password</label>
@@ -55,14 +62,14 @@
       </div>
       <div>
         <label class="inputFieldLabel" for="male">Gender</label>
-        <input type="radio" name="gender" id="male" />
+        <input type="radio" name="gender" id="male" checked />
         <label for="male">male</label>
         <input type="radio" name="gender" id="female" />
         <label for="female">Female</label>
       </div>
       <div>
         <label class="inputFieldLabel" for="chicken">Food List</label>
-        <input type="checkbox" name="food" id="chicken" />
+        <input type="checkbox" name="food" id="chicken" checked />
         <label for="chicken">Chicken</label>
         <input type="checkbox" name="food" id="fish" />
         <label for="fish">Fish</label>

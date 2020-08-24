@@ -71,26 +71,24 @@ body{
   border-radius: 53%;
   color: white;
   background: red;
-  visibility:hidden;
 }
 .errorBorder{
   border:2px solid red;
 }
 .errorMessage{
   color:red;
-  visibility: hidden;
 }
 .successIcon{
   /* fa-check */
   position: absolute;
   right: 5%;
-  top: 38%;
+  top: 48%;
   border: 1px solid;
   padding: 1px 1px;
   border-radius: 53%;
   color: white;
   background: green;
-  visibility:hidden;
+  /* visibility:hidden; */
 }
 .active{
   visibility: visible
