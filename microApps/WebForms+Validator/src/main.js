@@ -44,6 +44,33 @@ function formValidator(event) {
         errorHandler(event, msg);
       }
       break;
+    case 'password':
+      // call a function from Validator plugin
+      flag = nameAlphaNumericValidator(event.target.value);
+      if (flag) {
+        successHandler(event);
+      } else {
+        let msg = "Your Password Should Be Alpha Numeric";
+        errorHandler(event, msg);
+      }
+      break;
+    case 'confPassword':
+      // call a function from Validator plugin
+      flag = nameAlphaNumericValidator(event.target.value);
+      if (flag) {
+        successHandler(event);
+      } else {
+        let msg = "Your Password Should Be Alpha Numeric";
+        errorHandler(event, msg);
+      }
+      flag = matchPasswordAndConfPassword(document.getElementById("userPassword").value, event.target.value);
+      if (flag) {
+        successHandler(event);
+      } else {
+        let msg = "Your Password Should match with Confirm Password";
+        errorHandler(event, msg);
+      }
+      break;
   }
 }
 function successHandler(event) {

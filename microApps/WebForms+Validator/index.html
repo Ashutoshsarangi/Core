@@ -54,11 +54,17 @@
       </div>
       <div>
         <label class="inputFieldLabel" for="userPassword">Enter Password</label>
-        <input class="inputField" type="text" id="userPassword" placeholder="Enter Password" />
+        <input class="inputField" type="password" id="userPassword" data-bind="password" data-IconId="passwordIcon" data-errorId="passwordError"
+          onblur="formValidator(event)" placeholder="Enter Password" />
+        <i class="fa" id="passwordIcon" aria-hidden="true"></i>
+        <span id="passwordError"> </span>
       </div>
       <div>
         <label class="inputFieldLabel" for="userConfPassword">Enter Confirm Password</label>
-        <input class="inputField" type="text" id="userConfPassword" placeholder="Enter Confirm Password" />
+        <input class="inputField" type="password" id="userConfPassword" data-bind="confPassword" data-IconId="confPasswordIcon" data-errorId="confPasswordError"
+          onblur="formValidator(event)" placeholder="Enter Confirm Password" />
+        <i class="fa" id="confPasswordIcon" aria-hidden="true"></i>
+        <span id="confPasswordError"> </span>
       </div>
       <div>
         <label class="inputFieldLabel" for="male">Gender</label>

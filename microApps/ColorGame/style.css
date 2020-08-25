@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  width: 45%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn{
+  padding: 10% 14%;
+    border: 1px solid;
+}
+.errorMsg{
+  color:red;
+}

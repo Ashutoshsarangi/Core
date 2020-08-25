@@ -28,3 +28,19 @@ let ageRestriction = (date, minAge) => {
     return false;
   }
 }
+
+let nameAlphaNumericValidator = (name) => {
+  var letter = /[a-zA-Z]/;
+  var number = /[0-9]/;
+  var valid = number.test(name) && letter.test(name); //match a letter _and_ a number
+  return valid;
+}
+
+let matchPasswordAndConfPassword = (password, confPassword) => {
+  if (password === confPassword) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
