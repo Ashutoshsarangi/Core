@@ -1,0 +1,220 @@
+# Core
+
+#React
+  Today Going to start my react Journey Again.
+  
+Basic Html css and Javascript
+- [x] Accessibility
+        - [x] CSS and JavaScript accessibility best practices
+        - [x] WAI-ARIA basics
+        - [x] Mobile accessibility
+        - [x] Accessible multimedia
+        - [x] HTML: A good basis for accessibility
+            - [x] https://www.youtube.com/watch?time_continue=8&v=YhlAVlfH0rQ&feature=emb_logo(Must Check)
+        - [x] What is accessibility?
+- [x] Cross browser testing
+        - [x] Introduction to automated testing
+            - [x] Assessment(Need to read the Automation SetUp Gulp +Node)
+        - [x] Setting up your own test automation environment
+        - [x] Implementing feature detection
+        - [x] Handling common accessibility problems
+        - [x] Handling common JavaScript problems
+        - [x] Handling common HTML and CSS problems
+        - [x] Strategies for carrying out testing
+        - [x] Introduction to cross browser testing
+- [x] Web forms Working with user data
+    - [ ] For this I Need to Create Form To handle this things(Now —> Validation and Css)—>React
+    - [x] Advanced articles
+        - [x] CSS property compatibility table for form controls
+        - [x] Sending forms through JavaScript
+        - [x] How to build custom form controls
+    - [x] Validating and submitting form data
+        - [x] Sending form data
+        - [x] Client-side form validation
+    - [x] Form styling guides
+        - [x] UI pseudo-classes
+        - [x] Advanced form styling
+        - [x] Styling web forms
+            - [ ] Accessment
+    - [x] The different form controls
+        - [x] Other form controls
+            - [x] Accessment
+        - [x] The HTML5 input types
+            - [x] Accessment
+        - [x] Basic native form controls
+            - [x] Accessment
+    - [x] Introductory guides
+        - [x] How to structure a web form
+            - [x] Accessment
+        - [x] Your first form
+            - [x] Accessment(NA)
+- [x] Beyond Js:JS
+    - [ ] https://developers.google.com/web/fundamentals/ (At The END)
+    - [x] Asynchronous JavaScript
+        - [x] Choosing the right approach
+            - [x] Accessment(Na)
+        - [x] Making asynchronous programming easier with async and await
+            - [x] Need R&D on the Storeing variable in async await
+            - [x] Accessment(NA)
+        - [x] Handling async operations gracefully with Promises
+            - [x] Need to Check when Promises Reject who handles it
+            - [x] Accessment(NA)
+        - [x] Cooperative asynchronous JavaScript: Timeouts and intervals
+            - [x] Create a Stopwatch
+            - [x] Accessment(NA)
+        - [x] Introducing asynchronous JavaScript
+            - [x] Accessment(NA)
+        - [x] General asynchronous programming concepts
+            - [x] Accessment(NA)
+    - [x] Client-side web APIs
+        - [x] Client-side storage
+            - [x] Accessment
+        - [x] Video and audio APIs
+            - [x] Accessment
+        - [x] Drawing graphics
+            - [x] Accessment(no need)
+        - [x] Third party APIs
+            - [x] Accessment
+        - [x] Fetching data from the server
+            - [x] Accessment
+        - [x] Manipulating documents
+            - [x] Accessment (A dynamic shopping list)
+        - [x] Introduction to web APIs
+            - [x] Accessment(NA)
+    - [x] Introducing JavaScript objects
+        - [x] Inheritance in JavaScript
+            - [x] Accessment
+        - [x] Object building practice
+            - [x] Assessments(Not Required)
+        - [x] Working with JSON data
+            - [x] Accessment
+            - [x] Must do the Super hero Example
+        - [x] Object prototypes
+            - [x] Assessment
+        - [x] Object-oriented JavaScript for beginners
+            - [x] Assessment (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Test_your_skills:_Object-oriented_JavaScript)
+        - [x] Object basics
+    - [x] JavaScript building blocks
+        - [x] Introduction to events
+        - [x] Function return values
+        - [x] Build your own function
+        - [x] Functions — reusable blocks of code
+        - [x] Looping code
+        - [x] Making decisions in your code — conditionals
+    - [x] JavaScript First Steps
+        - [x] Arrays
+        - [x] Useful string methods
+        - [x] Handling text — strings in JavaScript
+        - [x] Storing the information you need — Variables
+        - [x] Basic math in JavaScript — numbers and operators
+        - [x] What went wrong? Troubleshooting JavaScript
+        - [x] A first splash into JavaScript
+        - [x] What is JavaScript?
+- [x] Beyond the basics: CSS
+    - [x] CSS layout
+        - [x] Supporting older browsers
+            - [x] Accessment(NA)
+        - [x] Legacy layout methods
+            - [x] Accessment(Not Required)
+        - [x] Beginner's guide to media queries
+            - [x] Accessment
+        - [x] Responsive design
+            - [x] Accessment(Not There)
+        - [x] Positioning
+            - [x] Accessment
+        - [x] Multiple-column layout
+            - [x] Accessment
+        - [x] Floats
+            - [x] Accessment
+        - [x] Grids
+            - [x] Accessment
+        - [x] Flexbox
+            - [x] Accessment
+        - [x] Normal flow
+            - [x] Accessment(Not There)
+        - [x] Practical positioning examples
+            - [x] Accessment(Must do the Example)
+        - [x] Introduction to CSS layout
+            - [x] Accessment(Not There)
+    - [x] Styling text
+        - [x] Styling links
+            - [x] Accessment
+        - [x] Styling lists
+            - [x] Accessment
+        - [x] Web fonts
+            - [x] Accessment
+        - [x] Fundamental text and font styling
+            - [x] Accessment
+    - [x] CSS building blocks
+        - [x] Advanced styling effects
+            - [x] Accessment(Not there)
+        - [x] Organizing your CSS
+            - [x] BEM Methodology(https://css-tricks.com/bem-101/)
+            - [x] Accessment(Not there)
+        - [x] Debugging CSS
+            - [x] Accessment(Not There)
+        - [x] Styling tables
+            - [x] Accessment
+        - [x] Images, media, and form elements
+            - [x] Accessment
+        - [x] Sizing items in CSS
+            - [x] Accessment
+        - [x] CSS values and units
+            - [x] Accessment
+        - [x] Overflowing content
+            - [x] Accessment
+        - [x] Handling different text directions
+            - [x] Accessment
+        - [x] Backgrounds and borders
+            - [x] https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Test_your_skills_backgrounds_and_border
+        - [x] The box model
+        - [x] CSS selectors
+        - [x] Cascade and inheritance
+    - [x] CSS Layout cookbook
+    - [x] CSS first steps
+        - [x] Using your new knowledge
+        - [x] How CSS is structured
+        - [x] How CSS works
+        - [x] Getting started with CSS
+        - [x] What is CSS?
+- [x] Beyond the basics: HTML
+    - [x]  HTML Tables
+        - [x] HTML table advanced features and accessibility
+            - [x] Accessment
+        - [x]  HTML table basics
+            - [x] Accessment
+    - [x] Multimedia and Embedding
+        - [x] From <object> to <iframe> — other embedding technologies
+            - [x] Accessment
+        - [x] Adding vector graphics to the web
+            - [x] Accessment(No Accessment)
+        - [x] Responsive images
+            - [x] Accessment
+        - [x] Video and audio content
+            - [x] Must need to DO Accessment and Examples
+        - [x] Images in HTML
+    - [x] Introduction to HTML
+        - [x] See also
+        - [x] Assessments
+        - [x] Debugging HTML
+        - [x] Document and website structure
+        - [x] Advanced text formatting
+            - [x] Test 1
+            - [x] Test 2
+        - [x] Creating hyperlinks
+            - [x] Assessment Tes
+                - [x] Test 3
+                - [x] Test 2
+                - [x] Test 1
+        - [x] HTML text fundamentals
+            - [x] Assessment Test
+        - [x] What’s in the head? Metadata in HTML
+        - [x] Getting started with HTML
+- [x] Complete beginner:
+    - [x] Getting Started With Web
+        - [x] How the web Works
+        - [x] Publish your website
+        - [x] Js Basic
+        - [x] CSS Basic
+        - [x] HTML Basic
+        - [x] File Details
