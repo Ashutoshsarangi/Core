@@ -5,7 +5,6 @@
   #Today Going to start my react Journey Again.
   
   - [ ] MAIN CONCEPTS
-    - [ ] 3. Rendering Elements
     - [ ] 4. Components and Props
     - [ ] 5. State and Lifecycle
     - [ ] 6. Handling Events
@@ -15,6 +14,7 @@
     - [ ] 10. Lifting State Up
     - [ ] 11. Composition vs Inheritance
     - [ ] 12. Thinking In React
+    - [x] 3. Rendering Elements
     - [x] 2. Introducing JSX
     - [x] 1. Hello World
   
