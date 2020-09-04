@@ -1,7 +1,23 @@
 # Core
 
 #React
-  Today Going to start my react Journey Again.
+  
+  #Today Going to start my react Journey Again.
+  
+  - [ ] MAIN CONCEPTS
+    - [ ] 7. Conditional Rendering
+    - [ ] 8. Lists and Keys
+    - [ ] 9. Forms
+    - [ ] 10. Lifting State Up
+    - [ ] 11. Composition vs Inheritance
+    - [ ] 12. Thinking In React
+    - [x] 6. Handling Events
+    - [x] 5. State and Lifecycle
+    - [x] 4. Components and Props
+    - [x] 3. Rendering Elements
+    - [x] 2. Introducing JSX
+    - [x] 1. Hello World
+  
   
 Basic Html css and Javascript
 - [x] Accessibility
