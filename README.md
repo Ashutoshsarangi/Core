@@ -5,8 +5,8 @@
   #Today Going to start my react Journey Again.
   
   - [ ] MAIN CONCEPTS
-    - [ ] 7. Conditional Rendering
-    - [ ] 8. Lists and Keys
+    - [x] 7. Conditional Rendering
+    - [x] 8. Lists and Keys
     - [ ] 9. Forms
     - [ ] 10. Lifting State Up
     - [ ] 11. Composition vs Inheritance
