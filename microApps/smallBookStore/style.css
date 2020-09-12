@@ -1,0 +1,13 @@
+.formContainer{
+  max-width: 30%;
+  margin: auto;
+}
+
+#carouselExampleControls div{
+  max-height:550px;
+}
+.flexContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
