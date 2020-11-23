@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <input type="text" onkeyup="dosomethig('Ashu', 'Basu', '123')" />
+  <script>
+    function test() {
+      console.log(arguments);
+    }
+
+    const thruttle = (fn, d) => {
+      let flag = true;
+      return function () {
+        let context = this;
+        let args = arguments;
+        if (flag) {
+          fn.apply(context, args);
+          flag = false;
+          setTimeout(() => {
+            fn.apply(context, args);
+            flag = true;
+          }, d);
+        }
+
+      }
+    }
+    let dosomethig = thruttle(test, 1000);
+  </script>
+</body>
+
+</html>
